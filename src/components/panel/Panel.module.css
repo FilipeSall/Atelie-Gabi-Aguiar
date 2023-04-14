@@ -1,0 +1,37 @@
+.panel {
+    background-color: var(--background-strong);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(70.33% - 16px);
+    text-align: start;
+    transition: all 0.3s ease;
+  }
+  
+  .panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .panel h2 {
+    font-size: 2rem;
+    color: var(--highlight);
+    margin-bottom: 8px;
+  }
+  
+  .panel p {
+    color: var(--text);
+    font-size: 1.25rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .panel {
+      width: calc(50% - 16px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .panel {
+      width: 100%;
+    }
+  }

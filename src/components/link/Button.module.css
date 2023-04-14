@@ -1,0 +1,29 @@
+.button {
+    text-decoration: none;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+}
+
+.button:hover:not(.active) {
+    background-color: var(--background-strong);
+  }
+  
+.active {
+    background-color: var(--success);
+    color: var(--background);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 700px) {
+    .button {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,13 @@
+.App{
+    height: 100vh;
+    padding: 4px;
+    background-image: linear-gradient(to right, #FFFFFF, #e7e0e0);
+}
+
+@media screen and (max-width:900px)  {
+    .App{
+        background-color: var(--background);
+        background-image: none;
+        height: 100%;
+    }
+}

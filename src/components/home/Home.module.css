@@ -1,0 +1,112 @@
+.container {
+    height: 90%;
+    display: flex;
+    color: var(--text);
+    animation: animeLeft 0.3s ease forwards;
+    padding: 5%;
+    overflow: hidden;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    font-size: 2rem;
+  }
+  
+  .imgContainer {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .infoContainer p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    font-style: italic;
+  }
+  
+  .infoContainer h1 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--text-strong);
+    margin-bottom: 20px;
+    font-family: 'Dancing Script' , 'Arial';
+  }
+  
+  .accent {
+    color: var(--highlight-strong);
+    font-weight: bold;
+    font-family: 'Dancing Script' , 'Arial';
+  }
+  
+  .imgContainer > img {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .btn__wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+  }
+  
+  .panelsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  @keyframes animeLeft {
+    0% {
+      margin-left: -15px;
+      opacity: 0;
+    }
+  
+    100% {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      overflow: auto;
+      padding: 0;
+      height: 100%;
+      margin: 8px 0;
+      background-image: url(../../assets/images/endless-constellation.svg);
+    }
+  
+    .imgContainer {
+      display: none;
+    }
+  
+    .infoContainer {
+      width: 100%;
+    }
+  
+    .infoContainer > h1 {
+      font-size: 3.5rem;
+    }
+  
+    .panelsContainer {
+      flex-wrap: wrap;
+    }
+  }
+  

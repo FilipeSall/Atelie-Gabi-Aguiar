@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    min-height: fit-content;
+    background-color: var(--background);
+    animation: animeLeft .3s forwards;
+}
+
+.tableTitle {
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: center;
+    margin: 2.5% 0 0.5% 0%;
+    font-family: 'Dancing Script';
+}
+
+.fadeIn {
+    animation: fadeInAnimation 1s ease-in 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.table1,
+.table2 {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.table1 th,
+.table1 td,
+.table2 th,
+.table2 td {
+    width: 25%;
+    /* Largura fixa para todas as células */
+    padding: 10px;
+    border: 1px solid var(--background-strong);
+    text-align: center;
+}
+
+.table1 th {
+    background-color: var(--highlight);
+    color: white;
+    font-weight: bold;
+}
+
+.table1 tbody tr:nth-child(even) {
+    background-color: var(--background-strong);
+}
+
+.table1 tbody tr:hover {
+    background-color: var(--highlight-light);
+    color: var(--text-strong);
+    cursor: pointer;
+    color: var(--background-strong);
+}
+
+.table2 th {
+    background-color: var(--accent-light);
+    color: white;
+    font-weight: bold;
+}
+
+.table2 tbody tr:nth-child(even) {
+    background-color: var(--background-light);
+}
+
+.table2 tbody tr:hover {
+    background-color: var(--accent-super-light);
+    color: var(--text-strong);
+    cursor: pointer;
+    color: var(--background-strong);
+}
+
+@keyframes animeLeft {
+    0% {
+        opacity: 0;
+        margin-left: -15px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,54 @@
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 4px;
+    color: var(--background);
+}
+
+.btn:hover{
+    background-color: var(--highlight-strong);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.wpp{
+    background-color: var(--highlight);
+}
+
+.insta {
+    background-image: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .insta:hover {
+    background-image: linear-gradient(
+      -45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+  }

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --background-strong: #e7e0e0;
+
+  --highlight: #32A287;
+  --highlight-strong: #1e866e;
+  --highlight-light: #4ebca2;
+  
+  --success: #44CF6C;
+  --success-strong: #26a94b;
+  --success-light: #6ede8d;
+
+  --text: #3E1929;
+  --text-strong: #190910;
+  --text-light: #583041;
+
+  --accent: #845A6D;
+  --accent-strong: #543040;
+  --accent-light: #9c7084;
+  --accent-super-light: #c397aa;
+}
