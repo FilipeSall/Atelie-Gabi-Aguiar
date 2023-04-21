@@ -21,6 +21,12 @@
     border-radius: 4px;
 }
 
+.infoBtn{
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
 @media screen and (max-width: 700px) {
     .button {
         padding: 8px 12px;

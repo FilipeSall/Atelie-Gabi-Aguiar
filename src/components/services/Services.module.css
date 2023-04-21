@@ -65,7 +65,6 @@
 .table1 tbody tr:hover {
     background-color: var(--highlight-light);
     color: var(--text-strong);
-    cursor: pointer;
     color: var(--background-strong);
 }
 
@@ -82,7 +81,6 @@
 .table2 tbody tr:hover {
     background-color: var(--accent-super-light);
     color: var(--text-strong);
-    cursor: pointer;
     color: var(--background-strong);
 }
 

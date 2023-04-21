@@ -1,22 +1,23 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useState } from 'react';
 
 const GlobalContext = createContext();
 
-const initialState = {};
-
-const globalReducer = (state, action) => {
-  switch (action.type) {
- 
-    default:
-      return state;
-  }
-};
-
 const GlobalProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(globalReducer, initialState);
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState('');
+
+  const showModalHandler = (content) => {
+    setShowModal(true);
+    setModalContent(content.modalInfo);
+  };
+
+  const hideModalHandler = () => {
+    setShowModal(false);
+    setModalContent('');
+  };
 
   return (
-    <GlobalContext.Provider value={{ state, dispatch }}>
+    <GlobalContext.Provider value={{ showModal, modalContent, showModalHandler, hideModalHandler }}>
       {children}
     </GlobalContext.Provider>
   );
