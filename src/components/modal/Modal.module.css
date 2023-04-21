@@ -7,6 +7,7 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc;
     z-index: 9999;
     color: var(--text);
     animation: animeLeft .3s forwards ease;
@@ -31,15 +32,20 @@
     z-index: 9999;
   }
   
-
+  .infoModal h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
   .infoModal button {
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 5px;
     background-color: #4285f4;
     color: white;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 20px;
   }
   
   .infoModal button:hover {
@@ -48,11 +54,18 @@
   
   @keyframes animeLeft {
     0%{
-        opacity: 0;
-        margin-left: -15px;
+      opacity: 0;
+      margin-left: -15px;
     }
     100%{
-        opacity: 1;
-        margin-left: inherit;
+      opacity: 1;
+      margin-left: inherit;
     }
+  }
+  
+  @media screen and (max-width:768px) {
+        .infoModal{
+            width: 75vw;
+            font-size: 1.5rem;
+        }
   }

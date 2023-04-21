@@ -2,8 +2,16 @@ import React from 'react';
 import styles from './Services.module.css';
 import 'react-toastify/dist/ReactToastify.css';
 import InfoBtn from '../link/InfoBtn';
+import Button from '../link/Button';
+import { BsWhatsapp } from 'react-icons/bs';
+import LinkBtn from '../btn/LinkBtn';
 
 function Services() {
+
+    const phoneNumber = 5561985376261;
+    const preformattedText = 'Olá, Gabi. Estou interessada(o) em seus serviços!';
+    const encodedText = encodeURIComponent(preformattedText);
+    const href = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
     return (
         <main className={styles.container}>
@@ -231,6 +239,14 @@ function Services() {
                     </tr>
                 </tbody>
             </table>
+            <div className={styles.wppBtnWrapper}>
+            <LinkBtn
+            text=""
+            path={href}
+            classBtn="wpp"
+            icon={<BsWhatsapp />}
+          />
+            </div>
         </main>
     )
 }

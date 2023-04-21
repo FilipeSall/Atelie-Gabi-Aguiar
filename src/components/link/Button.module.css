@@ -25,11 +25,21 @@
     border: none;
     cursor: pointer;
     background-color: inherit;
+    margin-left: 6px;
+    opacity: 0.8;
+}
+
+.infoBtn:hover{
+    opacity: 1;
 }
 
 @media screen and (max-width: 700px) {
     .button {
         padding: 8px 12px;
         font-size: 1rem;
+    }
+
+    .infoBtn{
+        opacity: 0.6;
     }
 }
