@@ -1,5 +1,5 @@
 .App{
-    height: 100vh;
+    height: fit-content;
     padding: 4px;
     background-image: linear-gradient(to right, #FFFFFF, #e7e0e0);
 }

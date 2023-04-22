@@ -50,10 +50,6 @@
   .imgContainer > img {
     border-radius: 10px;
     transition: all 0.3s ease;
-    width: 50vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   
   .btn__wrapper {
