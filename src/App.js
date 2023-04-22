@@ -10,14 +10,11 @@ function App() {
     <GlobalProvider>
       <BrowserRouter>
         <div className="App">
-          <Header />
-
-          <div>
+          <Header />      
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/services' element={<Services />} />
             </Routes>
-          </div>
         </div>
       </BrowserRouter>
     </GlobalProvider>
