@@ -1,5 +1,5 @@
 .container {
-    height: 90%;
+    height: 90vh;
     display: flex;
     color: var(--text);
     animation: animeLeft 0.3s ease forwards;
@@ -14,7 +14,7 @@
     text-align: center;
     align-items: center;
     width: 60%;
-    height: 100%;
+    height: fit-content;
     font-size: 2rem;
   }
   
