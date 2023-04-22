@@ -52,7 +52,7 @@
     position: absolute;
     width: 30%;
     box-shadow: 0px 1px 0 var(--text);
-  
+    border-radius: 5%;
   }
   
   .btn__wrapper {
@@ -96,6 +96,7 @@
   
     .infoContainer {
       width: 100%;
+      height: auto;
     }
   
     .infoContainer > h1 {
