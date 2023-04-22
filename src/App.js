@@ -12,10 +12,12 @@ function App() {
         <div className="App">
           <Header />
 
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/services' element={<Services />} />
-          </Routes>
+          <div>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/services' element={<Services />} />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </GlobalProvider>

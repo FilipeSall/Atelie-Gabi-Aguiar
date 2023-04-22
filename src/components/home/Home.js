@@ -15,7 +15,7 @@ function Main() {
   const href = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
   return (
-    <main className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.infoContainer}>
         <h1>
           Tudo pela beleza que você <span className={styles.accent}>merece!</span>
@@ -47,7 +47,7 @@ function Main() {
       <div className={styles.imgContainer}>
         <img src={homeImg} alt="Gabi Aguiar" />
       </div>
-    </main>
+    </section>
   );
 }
 

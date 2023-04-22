@@ -3,7 +3,6 @@
     display: flex;
     color: var(--text);
     animation: animeLeft 0.3s ease forwards;
-    padding: 1%;
     width: 99vw;
     overflow: hidden;
   }
