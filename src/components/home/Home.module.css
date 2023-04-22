@@ -3,8 +3,8 @@
     display: flex;
     color: var(--text);
     animation: animeLeft 0.3s ease forwards;
-    padding: 5%;
-    overflow: hidden;
+    padding: 1%;
+
   }
   
   .infoContainer {
