@@ -4,6 +4,7 @@
     animation: animeLeft 0.3s ease forwards;
     width: 99vw;
     position: relative;
+    padding: 0 4px;
   }
   
   .infoContainer {
