@@ -46,7 +46,7 @@
 .table1 td,
 .table2 th,
 .table2 td {
-    width: 25%;
+    width: 20%;
     /* Largura fixa para todas as células */
     padding: 10px;
     border: 1px solid var(--background-strong);
@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .container{
+        width: 98vw;
+    }
+
     .wppBtnWrapper {
         right: 25px;
     }
