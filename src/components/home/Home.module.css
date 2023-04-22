@@ -3,6 +3,7 @@
     color: var(--text);
     animation: animeLeft 0.3s ease forwards;
     width: 99vw;
+    position: relative;
   }
   
   .infoContainer {
@@ -47,7 +48,8 @@
   .imgContainer > img {
     transition: all 0.3s ease;
     z-index: -1;
-
+    position: absolute;
+    width: 30%;
   }
   
   .btn__wrapper {
