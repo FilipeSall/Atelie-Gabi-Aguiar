@@ -4,6 +4,9 @@ import homeImg from '../../assets/images/homePic.webp';
 import LinkBtn from '../btn/LinkBtn';
 import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
 import Panel from '../panel/Panel';
+import girlSvg from '../../assets/images/girlsvg.svg';
+import careSvg from '../../assets/images/caresvg.svg';
+import experienceSvg from '../../assets/images/experiencesvg.svg';
 
 function Main() {
   const phoneNumber = 5561985376261;
@@ -22,9 +25,9 @@ function Main() {
           sua beleza natural
         </p>
         <div className={styles.panelsContainer}>
-          <Panel num="Equipamentos" text="de última geração" />
-          <Panel num="Ambiente" text="aconchegante e relaxante" />
-          <Panel num="+3 anos" text="de experiência com estética" />
+          <Panel num="Cuidado & Carinho" text="Nossos tratamentos são realizados com amor e cuidado, pensando no bem-estar e na beleza da mulher" icon={<img src={careSvg} alt='Icone de cuidado e amor' />}/>
+          <Panel num="Estética Feminina" text="Serviços de beleza especializados em mulheres, com técnicas e produtos de alta qualidade" icon={<img src={girlSvg} alt='icone de mulher estilosa'/>  }/>
+          <Panel num="Experiência & Dedicação" text="Com mais de 3 anos de atuação na área de estética, é garantido que cada cliente saia do seu espaço se sentindo renovado e radiante." icon={<img src={experienceSvg} alt='icone de mulher graduada' />}/>
         </div>
         <div className={styles.btn__wrapper}>
           <LinkBtn

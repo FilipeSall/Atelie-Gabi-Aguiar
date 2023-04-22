@@ -6,6 +6,9 @@
     width: calc(70.33% - 16px);
     text-align: start;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   .panel:hover {
@@ -21,12 +24,25 @@
   
   .panel p {
     color: var(--text);
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .panel:hover span {
+    transition: transform 0.2s ease-in-out;
+    transform: translateY(-5px);
+  }
+
+  .panel img {
+    max-width: 2.5vw;
   }
   
   @media screen and (max-width: 768px) {
     .panel {
       width: calc(50% - 16px);
+    }
+
+    .panel img{
+      max-width:10vw ;
     }
   }
   
