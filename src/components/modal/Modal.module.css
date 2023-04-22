@@ -66,6 +66,7 @@
   @media screen and (max-width:768px) {
         .infoModal{
             width: 75vw;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            
         }
   }
