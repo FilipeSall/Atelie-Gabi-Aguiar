@@ -18,14 +18,14 @@
   }
   
   .panel h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--highlight);
     margin-bottom: 8px;
   }
   
   .panel p {
     color: var(--text);
-    
+    font-size: 16px;
   }
 
   .panel:hover span {
