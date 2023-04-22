@@ -22,7 +22,6 @@
     align-items: center;
     justify-content: center;
     width: 30%;
-    overflow: hidden;
   }
   
   .infoContainer p {
@@ -33,7 +32,7 @@
   }
   
   .infoContainer h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     color: var(--text-strong);
     font-family: 'Dancing Script' , 'Arial';
