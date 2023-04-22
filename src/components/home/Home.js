@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
-import homeImg from '../../assets/images/img1.webp';
+import homeImg from '../../assets/images/homePic.webp';
 import LinkBtn from '../btn/LinkBtn';
 import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
 import Panel from '../panel/Panel';
